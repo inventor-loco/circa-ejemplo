@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIRCA | Economía Circular en Zonas Rurales</title>
+    <meta name="description" content="Plataforma de economía circular para compartir recursos y necesidades en zonas rurales.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-leaf"></i> CIRCA
+        </div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#como-funciona">Cómo Funciona</a></li>
+            <li><a href="#contacto" class="btn-nav">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>Revitaliza tu Entorno Rural</h1>
+            <p>Únete a CIRCA, la red de economía circular diseñada para compartir herramientas, conocimientos y recursos entre vecinos de zonas rurales. Juntos somos más fuertes.</p>
+            <div class="hero-buttons">
+                <a href="#contacto" class="btn btn-primary">Comparte un Recurso</a>
+                <a href="#como-funciona" class="btn btn-secondary">Descubre Más</a>
+            </div>
+        </div>
+        <div class="hero-graphics">
+            <!-- Decorative glass elements -->
+            <div class="glass-card g1">
+                <i class="fa-solid fa-tractor"></i>
+                <span>Tractor disponible</span>
+            </div>
+            <div class="glass-card g2">
+                <i class="fa-solid fa-seedling"></i>
+                <span>Semillas locales</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="como-funciona" class="features">
+        <h2>Cómo Funciona CIRCA</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="icon-wrapper"><i class="fa-solid fa-hand-holding-hand"></i></div>
+                <h3>Publica o Busca</h3>
+                <p>Anuncia herramientas que no usas a diario o busca aquello que necesitas para tu próximo proyecto agrícola o artesanal.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-wrapper"><i class="fa-solid fa-comments"></i></div>
+                <h3>Conecta con Vecinos</h3>
+                <p>Contacta directamente con personas de tu comarca. Fortalece los lazos comunitarios mientras reduces gastos.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-wrapper"><i class="fa-solid fa-arrows-rotate"></i></div>
+                <h3>Economía Circular</h3>
+                <p>Alarga la vida útil de los recursos, reduce residuos y crea un impacto positivo y sostenible en tu entorno rural.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>¿Listo para unirte?</h2>
+                <p>Déjanos tus datos o dinos qué necesitas/ofreces, y te conectaremos con la red CIRCA más cercana a tu localidad.</p>
+            </div>
+            <form class="contact-form" action="#" method="POST">
+                <div class="input-group">
+                    <input type="text" id="name" name="name" required placeholder=" ">
+                    <label for="name">Nombre completo</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" name="email" required placeholder=" ">
+                    <label for="email">Correo electrónico</label>
+                </div>
+                <div class="input-group">
+                    <select id="interest" name="interest" required>
+                        <option value="" disabled selected>¿Qué te trae a CIRCA?</option>
+                        <option value="offer">Quiero ofrecer un recurso</option>
+                        <option value="need">Necesito un recurso</option>
+                        <option value="info">Quiero más información</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+                    <label for="message">Mensaje o detalles del recurso...</label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-submit">Enviar Mensaje <i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fa-solid fa-leaf"></i> CIRCA
+            </div>
+            <p>&copy; 2026 Proyecto CIRCA. Conectando el mundo rural.</p>
+        </div>
+    </footer>
+</body>
+</html>
